@@ -1,0 +1,73 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "__fold__.experimentalLazyAssets",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 450,
+      "images": [
+        {
+          "image": "https://omnidemostore.vteximg.com.br/arquivos/banner-2.jpg",
+          "mobileImage": "https://omnidemostore.vteximg.com.br/arquivos/banner-2.jpg"
+        },
+        {
+          "image": "https://omnidemostore.vteximg.com.br/arquivos/banner-1.jpg",
+          "mobileImage": "https://omnidemostore.vteximg.com.br/arquivos/banner-1.jpg"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "fullWidth": false,
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Basic is gold",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "flex-layout.row#shelf": {
+    "children": ["list-context.product-list#demo1"]
+  },
+
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf"
+    }
+  }
+}
