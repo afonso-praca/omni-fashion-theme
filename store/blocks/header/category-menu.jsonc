@@ -4,8 +4,8 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home"
+      "menu-item#category-clothing",
+      "menu-item#category-cameras"
     ]
   },
   "menu-item#category-apparel": {
@@ -101,6 +101,36 @@
         "noFollow": false,
         "tagTitle": "Home & Decor",
         "text": "Home & Decor"
+      }
+    }
+  },
+  "menu-item#category-clothing": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---accessories/clothing/",
+        "noFollow": false,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+  "menu-item#category-cameras": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/electronics/cameras",
+        "noFollow": false,
+        "tagTitle": "Cameras",
+        "text": "Cameras"
       }
     }
   },
